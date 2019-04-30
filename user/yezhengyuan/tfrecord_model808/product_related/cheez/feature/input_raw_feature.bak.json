@@ -1,0 +1,209 @@
+[
+  {
+    "name": "SVU_TYPE",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVV_VID",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVU_UID",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVA_UID",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVDWELL",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 1.0,
+        "US\tvis": 1.0,
+        "IN\treg": 1.0,
+        "IN\tvis": 1.0,
+        "": 1.0
+      },
+      "min": 0.0,
+      "max": 100.0,
+      "denominator": 10.0
+    }
+  },
+  {
+    "name": "SVSHARE",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 100.0,
+        "US\tvis": 100.0,
+        "IN\treg": 70.0,
+        "IN\tvis": 70.0,
+        "": 40.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "SVJOIN",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVCOMMENT",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVEXPOSE",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVFOLLOW",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 40.0,
+        "US\tvis": 100.0,
+        "IN\treg": 100.0,
+        "IN\tvis": 100.0,
+        "": 40.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "SVLIKE",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 40.0,
+        "US\tvis": 100.0,
+        "IN\treg": 100.0,
+        "IN\tvis": 100.0,
+        "": 40.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "SVU_COUNTRY",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVU_OS",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVV_COUNTRY",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "SVV_DURATION",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVV_DWELL",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_JOIN",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_SHARE",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_CLICK",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_COMMENT",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_FOLLOW",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_LIKE",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SVV_CLICKRATE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVV_LIKERATE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVV_COMMENTRATE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVV_SHARERATE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVV_FOLLOWRATE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVV_WATCHALLRATE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "SVE_TIMEOFDAY",
+    "type": "string",
+    "used": "false"
+  },
+  {
+    "name": "SVE_DAYOFWEEK",
+    "type": "string",
+    "used": "false"
+  },
+  {
+    "name": "SVU_DANCEOFFSTATIS_KEY",
+    "type": "string",
+    "used": "true"
+  }
+]

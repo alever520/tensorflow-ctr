@@ -1,0 +1,423 @@
+[
+  {
+    "name": "item_id",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "user_id",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "region",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "city",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "parent_category_name",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "category_name",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "param_1",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "param_2",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "param_3",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "price",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "item_seq_number",
+    "format": {
+      "csv": {
+        "type": "int64",
+        "default": -1
+      },
+      "tfrecord": {
+        "type": "fixed_len_int64",
+        "shape": []
+      }
+    },
+    "used": "true",
+    "csv_default": -1
+  },
+  {
+    "name": "activation_date",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "user_type",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "image_top_1",
+    "format": {
+      "csv": {
+        "type": "int64"
+      },
+      "tfrecord": {
+        "type": "fixed_len_int64",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "deal_probability",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 1.0
+      },
+      "as_probability": true,
+      "min": 0.0,
+      "max": 100.0,
+      "denominator": 0.5
+    }
+  },
+  {
+    "name": "avg_days_up_user",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "avg_times_up_user",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "n_user_items",
+    "format": {
+      "csv": {
+        "type": "int64"
+      },
+      "tfrecord": {
+        "type": "fixed_len_int64",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "title_tfidf_strings",
+    "format": {
+      "csv": {
+        "type": "string_list"
+      },
+      "tfrecord": {
+        "type": "var_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "title_tfidf_floats",
+    "format": {
+      "csv": {
+        "type": "float_list"
+      },
+      "tfrecord": {
+        "type": "var_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "title_word_count",
+    "format": {
+      "csv": {
+        "type": "int64"
+      },
+      "tfrecord": {
+        "type": "fixed_len_int64",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "description_tfidf_strings",
+    "format": {
+      "csv": {
+        "type": "string_list"
+      },
+      "tfrecord": {
+        "type": "var_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "description_tfidf_floats",
+    "format": {
+      "csv": {
+        "type": "float_list"
+      },
+      "tfrecord": {
+        "type": "var_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "description_word_count",
+    "format": {
+      "csv": {
+        "type": "int64"
+      },
+      "tfrecord": {
+        "type": "fixed_len_int64",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "image_statics",
+    "format": {
+      "csv": {
+        "type": "float_list"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": [
+          24
+        ]
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "price_log1p_nan_to_mean",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "price_log1p_nan_to_0",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "price_log1p_nan_to_neg",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "price_isnull",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "item_seq_number_log1p",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "activation_date_dow",
+    "format": {
+      "csv": {
+        "type": "int64"
+      },
+      "tfrecord": {
+        "type": "fixed_len_int64",
+        "shape": []
+      }
+    },
+    "used": "true",
+    "from": {
+      "column": "activation_date",
+      "act": "dow"
+    }
+  }
+]

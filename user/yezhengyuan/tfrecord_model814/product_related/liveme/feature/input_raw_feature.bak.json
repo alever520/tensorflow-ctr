@@ -1,0 +1,213 @@
+[
+  {
+    "name": "JOIN",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 1.0
+      },
+      "min": 0.0,
+      "max": 1000.0,
+      "denominator": 10.0
+    }
+  },
+  {
+    "name": "FOLLOW",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 0.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "GIFT",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 0.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "TALK",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "SHARE",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 0.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "PRAISE",
+    "type": "num",
+    "used": "false"
+  },
+  {
+    "name": "COUNTRY",
+    "type": "string",
+    "used": "false"
+  },
+  {
+    "name": "U_UID",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "U_SEX",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "U_CITY",
+    "type": "string",
+    "used": "false"
+  },
+  {
+    "name": "U_LAN",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "A_UID",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "A_SEX",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "V_SHARER",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_CLICKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LIKER",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_TALKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_GIFTR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_FOLLOWR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_RENTENTIONR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_DWE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LSHARER",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LCLICKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LLIKER",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LTALKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LGIFTR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LFOLLOWR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LRENTENTIONR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_LDWE",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_MLCLICKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_FLCLICKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_MCLICKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_FCLICKR",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "U_PREFV2",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "V_AUDIENCE_NUM",
+    "type": "num",
+    "used": "true"
+  }
+]

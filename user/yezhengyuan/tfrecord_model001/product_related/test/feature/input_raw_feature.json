@@ -1,0 +1,152 @@
+[
+  {
+    "name": "item_id",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "user_id",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "region",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "city",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "parent_category_name",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "category_name",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "param_1",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "param_2",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "param_3",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "title",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "description",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "price",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "item_seq_number",
+    "type": "int",
+    "used": "true"
+  },
+  {
+    "name": "activation_date",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "user_type",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "image",
+    "type": "string",
+    "used": "true"
+  },
+  {
+    "name": "image_top_1",
+    "type": "int",
+    "used": "true"
+  },
+  {
+    "name": "deal_probability",
+    "type": "num",
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 1.0
+      },
+      "as_probability": true,
+      "min": 0.0,
+      "max": 100.0,
+      "denominator": 0.5
+    }
+  },
+  {
+    "name": "title_tfidf_strings",
+    "type": "varlen_bytes",
+    "used": "true"
+  },
+  {
+    "name": "title_tfidf_floats",
+    "type": "varlen_float",
+    "used": "true"
+  },
+  {
+    "name": "title_word_count",
+    "type": "int",
+    "used": "true"
+  },
+  {
+    "name": "description_tfidf_strings",
+    "type": "varlen_bytes",
+    "used": "true"
+  },
+  {
+    "name": "description_tfidf_floats",
+    "type": "varlen_float",
+    "used": "true"
+  },
+  {
+    "name": "description_word_count",
+    "type": "int",
+    "used": "true"
+  },
+  {
+    "name": "activation_date_dow",
+    "type": "int",
+    "used": "true"
+  },
+  {
+    "name": "avg_days_up_user",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "avg_times_up_user",
+    "type": "num",
+    "used": "true"
+  },
+  {
+    "name": "n_user_items",
+    "type": "int",
+    "used": "true"
+  }
+]

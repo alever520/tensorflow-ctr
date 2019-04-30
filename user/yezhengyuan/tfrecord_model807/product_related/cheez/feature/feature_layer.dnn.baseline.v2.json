@@ -1,0 +1,562 @@
+{
+  "numeric_column": {
+    "SVV_CLICKRATE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_CLICKRATE"
+      }
+    },
+    "SVV_LIKERATE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_LIKERATE"
+      }
+    },
+    "SVV_COMMENTRATE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_COMMENTRATE"
+      }
+    },
+    "SVV_SHARERATE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_SHARERATE"
+      }
+    },
+    "SVV_FOLLOWRATE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_FOLLOWRATE"
+      }
+    },
+    "SVV_WATCHALLRATE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_WATCHALLRATE"
+      }
+    }
+  },
+  "bucketized_column": {
+    "SVV_CLICKRATE": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "SVV_CLICKRATE"
+      },
+      "boundaries":[0.0, 0.000001, 0.0648, 0.0914, 0.1136, 0.1333, 0.1534, 0.1719, 0.1884, 0.2017, 0.2167, 0.2328, 0.2455, 0.2601, 0.2771, 0.2945, 0.3103, 0.3321, 0.3506, 0.37, 0.4039, 0.6288]
+    },
+    "SVV_LIKERATE": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "SVV_LIKERATE"
+      },
+      "boundaries":[0.0, 0.000001, 0.0021, 0.0031, 0.0038, 0.0045, 0.0051, 0.0056, 0.0062, 0.0068, 0.0074, 0.0083, 0.0091, 0.0106, 0.0129, 0.015, 0.018, 0.0239, 0.0313, 0.0466, 0.3333]
+    },
+    "SVV_COMMENTRATE": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "SVV_COMMENTRATE"
+      },
+      "boundaries": [0.0, 0.000001, 0.0002, 0.0003, 0.0004, 0.0005, 0.0006, 0.0008, 0.001, 0.0013, 0.0017, 0.0028, 0.0051, 0.3383]
+    },
+    "SVV_SHARERATE": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "SVV_SHARERATE"
+      },
+      "boundaries":[0.0,0.000001,  0.0003, 0.0008, 0.0013, 0.0017, 0.0022, 0.0027, 0.0034, 0.0041, 0.0047, 0.0054, 0.0061, 0.007, 0.0083, 0.0097, 0.0115, 0.014, 0.0177, 0.25]
+    },
+    "SVV_FOLLOWRATE": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "SVV_FOLLOWRATE"
+      },
+      "boundaries":[0.0,0.000001,  0.0001, 0.0004, 0.0005, 0.0007, 0.0008, 0.0009, 0.001, 0.0011, 0.0013, 0.0015, 0.0019, 0.0024, 0.003, 0.0041, 0.0055, 0.0107, 0.2778]
+    },
+    "SVV_WATCHALLRATE": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "SVV_WATCHALLRATE"
+      },
+      "boundaries":[0.0, 0.000001, 0.4433, 0.5027, 0.5404, 0.571, 0.6, 0.6197, 0.6411, 0.6583, 0.6748, 0.6889, 0.703, 0.7186, 0.7317, 0.7458, 0.7593, 0.7715, 0.7916, 0.8124, 0.8413, 1.0]
+    }
+  },
+  "categorical_column_with_hash_bucket": {
+    "SVU_TYPE": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVU_TYPE"
+      },
+      "hash_bucket_size": 1000
+    },
+    "SVV_VID": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_VID"
+      },
+      "hash_bucket_size": 200000
+    },
+    "SVU_UID": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVU_UID"
+      },
+      "hash_bucket_size": 2000000
+    },
+    "SVA_UID": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVA_UID"
+      },
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVU_COUNTRY"
+      },
+      "hash_bucket_size": 200
+    },
+    "SVU_OS": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVU_OS"
+      },
+      "hash_bucket_size": 200
+    },
+    "SVV_COUNTRY": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "SVV_COUNTRY"
+      },
+      "hash_bucket_size": 200
+    }
+  },
+  "indicator_column": {
+  },
+  "embedding_column": {
+    "SVV_CLICKRATE": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "SVV_CLICKRATE"
+      },
+      "dimension": 10
+    },
+    "SVV_LIKERATE": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "SVV_LIKERATE"
+      },
+      "dimension": 10
+    },
+    "SVV_COMMENTRATE": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "SVV_COMMENTRATE"
+      },
+      "dimension": 10
+    },
+    "SVV_SHARERATE": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "SVV_SHARERATE"
+      },
+      "dimension": 10
+    },
+    "SVV_FOLLOWRATE": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "SVV_FOLLOWRATE"
+      },
+      "dimension": 10
+    },
+    "SVV_WATCHALLRATE": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "SVV_WATCHALLRATE"
+      },
+      "dimension": 10
+    },
+    "SVU_TYPE": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVU_TYPE"
+      },
+      "dimension": 10
+    },
+    "SVV_VID": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVV_VID"
+      },
+      "dimension": 100
+    },
+    "SVU_UID": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVU_UID"
+      },
+      "dimension": 100
+    },
+    "SVA_UID": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVA_UID"
+      },
+      "dimension": 50
+    },
+    "SVU_COUNTRY": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVU_COUNTRY"
+      },
+      "dimension": 20
+    },
+    "SVU_OS": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVU_OS"
+      },
+      "dimension": 10
+    },
+    "SVV_COUNTRY": {
+      "come_from": {
+        "column": "categorical_column_with_hash_bucket",
+        "name": "SVV_COUNTRY"
+      },
+      "dimension": 20
+    }
+  },
+  "crossed_column": {
+    "SVU_COUNTRY,SVU_TYPE,SVV_CLICKRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_CLICKRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_LIKERATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_LIKERATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_COMMENTRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_COMMENTRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_SHARERATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_SHARERATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_FOLLOWRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_FOLLOWRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_WATCHALLRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_WATCHALLRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_COUNTRY": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVV_COUNTRY"
+        }
+      ],
+      "hash_bucket_size": 120000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVV_VID": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVV_VID"
+        }
+      ],
+      "hash_bucket_size": 12000000
+    },
+    "SVU_COUNTRY,SVU_TYPE,SVA_UID": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVU_TYPE"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVA_UID"
+        }
+      ],
+      "hash_bucket_size": 12000000
+    },
+    "SVU_COUNTRY,SVV_CLICKRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_CLICKRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVV_LIKERATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_LIKERATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVV_COMMENTRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_COMMENTRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVV_SHARERATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_SHARERATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVV_FOLLOWRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_FOLLOWRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVV_WATCHALLRATE": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "bucketized_column",
+          "name": "SVV_WATCHALLRATE"
+        }
+      ],
+      "hash_bucket_size": 200000
+    },
+    "SVU_COUNTRY,SVV_COUNTRY": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVV_COUNTRY"
+        }
+      ],
+      "hash_bucket_size": 120000
+    },
+    "SVU_COUNTRY,SVV_VID": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVV_VID"
+        }
+      ],
+      "hash_bucket_size": 12000000
+    },
+    "SVU_COUNTRY,SVA_UID": {
+      "come_from": [
+        {
+          "column": "raw_column",
+          "name": "SVU_COUNTRY"
+        },
+        {
+          "column": "raw_column",
+          "name": "SVA_UID"
+        }
+      ],
+      "hash_bucket_size": 12000000
+    }
+  },
+  "model_input": {
+    "wide_column": {
+      "crossed_column": [
+        "SVU_COUNTRY,SVU_TYPE,SVV_CLICKRATE",
+        "SVU_COUNTRY,SVU_TYPE,SVV_LIKERATE",
+        "SVU_COUNTRY,SVU_TYPE,SVV_COMMENTRATE",
+        "SVU_COUNTRY,SVU_TYPE,SVV_SHARERATE",
+        "SVU_COUNTRY,SVU_TYPE,SVV_FOLLOWRATE",
+        "SVU_COUNTRY,SVU_TYPE,SVV_WATCHALLRATE",
+        "SVU_COUNTRY,SVU_TYPE,SVV_COUNTRY",
+        "SVU_COUNTRY,SVU_TYPE,SVV_VID",
+        "SVU_COUNTRY,SVU_TYPE,SVA_UID",
+        "SVU_COUNTRY,SVV_CLICKRATE",
+        "SVU_COUNTRY,SVV_LIKERATE",
+        "SVU_COUNTRY,SVV_COMMENTRATE",
+        "SVU_COUNTRY,SVV_SHARERATE",
+        "SVU_COUNTRY,SVV_FOLLOWRATE",
+        "SVU_COUNTRY,SVV_WATCHALLRATE",
+        "SVU_COUNTRY,SVV_COUNTRY",
+        "SVU_COUNTRY,SVV_VID",
+        "SVU_COUNTRY,SVA_UID"
+      ],
+      "bucketized_column": [
+        "SVV_CLICKRATE",
+        "SVV_LIKERATE",
+        "SVV_COMMENTRATE",
+        "SVV_SHARERATE",
+        "SVV_FOLLOWRATE",
+        "SVV_WATCHALLRATE"
+      ],
+      "categorical_column_with_hash_bucket": [
+        "SVU_TYPE",
+        "SVV_VID",
+        "SVU_UID",
+        "SVA_UID",
+        "SVU_COUNTRY",
+        "SVU_OS",
+        "SVV_COUNTRY"
+      ]
+    },
+    "deep_column": {
+      "embedding_column": [
+        "SVU_TYPE",
+        "SVV_VID",
+        "SVU_UID",
+        "SVA_UID",
+        "SVU_COUNTRY",
+        "SVU_OS",
+        "SVV_COUNTRY",
+        "SVV_CLICKRATE",
+        "SVV_LIKERATE",
+        "SVV_COMMENTRATE",
+        "SVV_SHARERATE",
+        "SVV_FOLLOWRATE",
+        "SVV_WATCHALLRATE"
+      ],
+      "numeric_column": [
+      ]
+    }
+  }
+}

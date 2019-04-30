@@ -1,0 +1,179 @@
+{
+  "estimator_run_config":{
+    "save_checkpoints_steps": 100000000,
+    "save_checkpoints_secs": null,
+    "keep_checkpoint_max": 3,
+    "save_summary_steps": 1000,
+    "log_step_count_steps": 1000
+  },
+  "session_config": {
+    "device_count": {
+      "GPU": 0
+    }
+  },
+  "odd": {
+    "input_dataset_conf": {
+      "compression_type": "GZIP"
+    },
+    "decode_csv": {
+      "na_value": "",
+      "field_delim": "\t"
+    }
+  },
+  "type": "deep",
+  "optimizer": {
+    "Ftrl": {
+      "default_wide": {
+        "learning_rate": 0.2,
+        "learning_rate_power": -0.5,
+        "initial_accumulator_value": 0.1,
+        "l1_regularization_strength": 0.0,
+        "l2_regularization_strength": 0.0,
+        "use_locking": false,
+        "name": "Ftrl_default_wide",
+        "l2_shrinkage_regularization_strength": 0.0
+      },
+      "default_wide_deep": {
+        "learning_rate": 0.005,
+        "learning_rate_power": -0.5,
+        "initial_accumulator_value": 0.1,
+        "l1_regularization_strength": 0.0,
+        "l2_regularization_strength": 0.0,
+        "use_locking": false,
+        "name": "Ftrl_default_wide_deep",
+        "l2_shrinkage_regularization_strength": 0.0
+      }
+    },
+    "Adagrad": {
+      "default_deep": {
+        "learning_rate": 0.05,
+        "initial_accumulator_value": 0.1,
+        "use_locking": false,
+        "name": "Adagrad_default_deep"
+      },
+      "default_wide_deep": {
+        "learning_rate": 0.001,
+        "initial_accumulator_value": 0.1,
+        "use_locking": false,
+        "name": "Adagrad_default_wide_deep"
+      }
+    },
+    "LazyAdam": {
+      "default": {
+        "learning_rate": 0.001,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "epsilon": 1e-8,
+        "use_locking": false,
+        "name": "LazyAdam_default"
+      }
+    }
+  },
+
+  "wide": {
+    "weight_column": "SAMPLE_WEIGHT",
+    "optimizer": {
+      "type": "Ftrl",
+      "conf": "default_wide"
+    }
+  },
+  "deep": {
+    "hidden_units": [
+      512,
+      256,
+      128,
+      64
+    ],
+    "weight_column": "SAMPLE_WEIGHT",
+    "dropout": null,
+    "optimizer": {
+      "type": "Adagrad",
+      "conf": "default_deep"
+    }
+  },
+  "dnn_multi_label_classifier": {
+    "hidden_units": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "weight_column": "SAMPLE_WEIGHT",
+    "dropout": null,
+    "optimizer": {
+      "type": "Adagrad",
+      "conf": "default_deep"
+    },
+    "n_classes": 4,
+    "is_multi_label": true
+  },
+  "deep_gpu": {
+    "hidden_units": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "weight_column": "SAMPLE_WEIGHT",
+    "dropout": null,
+    "optimizer": {
+      "type": "Adagrad",
+      "conf": "default_deep"
+    }
+  },
+  "dnn_linear_combined_regressor": {
+    "dnn_hidden_units": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "weight_column": "SAMPLE_WEIGHT",
+    "loss_reduction": "weighted_sum",
+    "dnn_dropout": null,
+    "linear_optimizer": {
+      "type": "Ftrl",
+      "conf": "default_wide_deep"
+    },
+    "dnn_optimizer": {
+      "type": "Adagrad",
+      "conf": "default_wide_deep"
+    }
+  },
+  "widedeep": {
+    "dnn_hidden_units": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "weight_column": "SAMPLE_WEIGHT",
+    "dnn_dropout": null,
+    "linear_optimizer": {
+      "type": "Ftrl",
+      "conf": "default_wide_deep"
+    },
+    "dnn_optimizer": {
+      "type": "Adagrad",
+      "conf": "default_wide_deep"
+    }
+  },
+  "deepfm": {
+    "dnn_hidden_units": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "weight_column": "SAMPLE_WEIGHT",
+    "linear_optimizer": {
+      "type": "Adagrad",
+      "conf": "default_wide_deep"
+    },
+    "dnn_optimizer": {
+      "type": "Adagrad",
+      "conf": "default_wide_deep"
+    }
+  }
+
+}

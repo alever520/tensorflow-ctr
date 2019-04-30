@@ -1,0 +1,6 @@
+nohup.out
+/.idea/*
+/tmp/*
+!/tmp/training_samples
+/tmp/training_samples/*
+!/tmp/training_samples/.gitkeep

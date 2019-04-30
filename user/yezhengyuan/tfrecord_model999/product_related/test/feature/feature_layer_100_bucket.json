@@ -1,0 +1,490 @@
+{
+  "categorical_column_with_identity": {
+    "image_top_1": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "image_top_1"
+      },
+      "num_buckets": 10000,
+      "default_value": 9999
+    },
+    "activation_date_dow": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "activation_date_dow"
+      },
+      "num_buckets": 10,
+      "default_value": 9
+    }
+  },
+  "weighted_categorical_column": {
+    "title_tfidf_floats": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "title_tfidf_strings"
+      },
+      "weight_feature_key": "title_tfidf_floats"
+    },
+    "description_tfidf_floats": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "description_tfidf_strings"
+      },
+      "weight_feature_key": "description_tfidf_floats"
+    }
+
+  },
+  "categorical_column_with_vocabulary_file_dir": "/data/yezhengyuan/liveme_yezhengyuan_model502/tensorflow_training/user/yezhengyuan/vob",
+  "categorical_column_with_vocabulary_file": {
+    "item_id": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "item_id"
+      },
+      "vocabulary_size": 1503424,
+      "num_oov_buckets": 1
+    },
+    "user_id": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "user_id"
+      },
+      "vocabulary_size": 771769,
+      "num_oov_buckets": 1
+    },
+    "title_tfidf_strings": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "title_tfidf_strings"
+      },
+      "vocabulary_size": 174490,
+      "num_oov_buckets": 1
+    },
+    "description_tfidf_strings": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "description_tfidf_strings"
+      },
+      "vocabulary_size": 570522,
+      "num_oov_buckets": 1
+    },
+    "region": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "region"
+      },
+      "vocabulary_size": 28,
+      "num_oov_buckets": 1
+    },
+    "city": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "city"
+      },
+      "vocabulary_size": 1733,
+      "num_oov_buckets": 1
+    },
+    "parent_category_name": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "parent_category_name"
+      },
+      "vocabulary_size": 9,
+      "num_oov_buckets": 1
+    },
+    "category_name": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "category_name"
+      },
+      "vocabulary_size": 47,
+      "num_oov_buckets": 1
+    },
+    "param_1": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "param_1"
+      },
+      "vocabulary_size": 371,
+      "num_oov_buckets": 1
+    },
+    "param_2": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "param_2"
+      },
+      "vocabulary_size": 271,
+      "num_oov_buckets": 1
+    },
+    "param_3": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "param_3"
+      },
+      "vocabulary_size": 1219,
+      "num_oov_buckets": 1
+    }
+  },
+
+
+
+  "categorical_column_with_vocabulary_list":{
+    "activation_date": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "activation_date"
+      },
+      "vocabulary_list": [
+        "",
+        "2017-03-28",
+        "2017-03-26",
+        "2017-03-20",
+        "2017-03-25",
+        "2017-03-16",
+        "2017-03-23",
+        "2017-03-17",
+        "2017-03-22",
+        "2017-03-19",
+        "2017-03-21",
+        "2017-03-27",
+        "2017-03-18",
+        "2017-03-24",
+        "2017-03-15",
+        "2017-03-29",
+        "2017-04-02",
+        "2017-04-07",
+        "2017-04-01",
+        "2017-03-31",
+        "2017-03-30",
+        "2017-04-03",
+        "2017-04-18",
+        "2017-04-16",
+        "2017-04-17",
+        "2017-04-15",
+        "2017-04-12",
+        "2017-04-13",
+        "2017-04-14",
+        "2017-04-19",
+        "2017-04-20"
+      ],
+      "num_oov_buckets": 100
+    },
+    "user_type": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "user_type"
+      },
+      "vocabulary_list": [
+        "",
+        "Private",
+        "Company",
+        "Shop"
+      ],
+      "num_oov_buckets": 100
+    }
+
+  },
+  "numeric_column": {
+    "avg_days_up_user": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "avg_days_up_user"
+      }
+    },
+    "avg_times_up_user": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "avg_times_up_user"
+      }
+    },
+    "n_user_items": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "n_user_items"
+      }
+    },
+    "title_word_count": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "title_word_count"
+      }
+    },
+    "description_word_count": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "description_word_count"
+      }
+    },
+    "item_seq_number": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "item_seq_number"
+      }
+    },
+    "price": {
+      "come_from": {
+        "column": "raw_column",
+        "name": "price"
+      }
+    }
+  },
+  "bucketized_column": {
+    "avg_days_up_user": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "avg_days_up_user"
+      },
+      "boundaries":
+              [-1.0, 1.0, 2.0, 3.1666666666666665, 4.0, 4.666666666666667, 5.0, 5.5, 6.0, 6.117647058823528, 6.5, 6.8, 7.0, 7.25, 7.5, 7.777777777777778, 8.0, 8.1, 8.333333333333334, 8.535714285714286, 8.777777777777779, 9.0, 9.05, 9.327272727272726, 9.5, 9.666666666666666, 9.852941176470589, 10.0, 10.142857142857142, 10.333333333333334, 10.5, 10.692307692307693, 10.909090909090908, 11.0, 11.166666666666664, 11.333333333333336, 11.533333333333333, 11.722222222222221, 11.928571428571427, 12.0, 12.166666666666664, 12.346153846153848, 12.5, 12.681818181818182, 12.875, 13.0, 13.136, 13.333333333333336, 13.5, 13.68421052631579, 13.882352941176471, 14.0, 14.107142857142858, 14.30232558139535, 14.5, 14.666666666666664, 14.891013384321225, 15.0, 15.142857142857142, 15.363636363636365, 15.586985391766266, 15.818181818181818, 16.0, 16.235294117647058, 16.5, 16.75, 17.0, 17.28, 17.666666666666668, 18.0, 18.71875, 19.0]
+    },
+    "avg_times_up_user": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "avg_times_up_user"
+      },
+      "boundaries":
+              [-1.0, 1.0, 1.0365853658536586, 1.0769230769230769, 1.1111111111111112, 1.1428571428571428, 1.181818181818182, 1.2026875699888018, 1.25, 1.272108843537415, 1.3125, 1.3333333333333333, 1.375, 1.4023188405797102, 1.4444444444444444, 1.5, 1.5351351351351352, 1.5714285714285714, 1.6, 1.6298521256931608, 1.6666666666666667, 1.6956521739130437, 1.7272727272727273, 1.75, 1.7692307692307692, 1.8, 1.8258064516129036, 1.851851851851852, 1.8765432098765433, 1.9090909090909087, 1.9444444444444444, 2.0, 2.0597014925373136, 2.1, 2.142857142857143, 2.182737169517885, 2.2222222222222223, 2.2625, 2.315412186379928, 2.3513513513513518, 2.4047619047619047, 2.46875, 2.5, 2.6, 2.7142857142857144, 2.9, 3.0, 5.0]
+    },
+    "n_user_items": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "n_user_items"
+      },
+      "boundaries":
+              [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 25.0, 26.0, 27.0, 29.0, 30.0, 32.0, 33.0, 35.0, 38.0, 40.0, 43.0, 47.0, 51.0, 57.0, 64.0, 74.0, 93.0, 128.0, 197.0, 318.0, 487.0, 716.0, 1069.0, 2092.0, 6106.0]
+    },
+    "title_word_count": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "title_word_count"
+      },
+      "boundaries":
+              [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 15.0]
+    },
+    "description_word_count": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "description_word_count"
+      },
+      "boundaries":
+              [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 34.0, 35.0, 37.0, 39.0, 41.0, 43.0, 46.0, 48.0, 51.0, 55.0, 59.0, 63.0, 69.0, 75.0, 83.0, 93.0, 106.0, 122.0, 148.0, 202.0, 549.0]
+    },
+    "item_seq_number": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "item_seq_number"
+      },
+      "boundaries":
+              [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 28.0, 29.0, 30.0, 31.0, 33.0, 34.0, 35.0, 37.0, 38.0, 40.0, 42.0, 44.0, 46.0, 48.0, 50.0, 52.0, 54.0, 57.0, 59.0, 62.0, 65.0, 68.0, 72.0, 76.0, 79.0, 84.0, 88.0, 94.0, 99.0, 105.0, 112.0, 120.0, 128.0, 138.0, 149.0, 162.0, 178.0, 197.0, 219.0, 248.0, 284.0, 333.0, 400.0, 489.0, 637.0, 866.0, 1254.0, 1944.0, 3410.0, 7026.0, 19752.0, 203961.0]
+    },
+    "price": {
+      "come_from": {
+        "column": "numeric_column",
+        "name": "price"
+      },
+      "boundaries":
+              [-1.0, 1.0, 36.0, 65.0, 100.0, 140.0, 150.0, 200.0, 220.0, 250.0, 295.0, 300.0, 350.0, 400.0, 470.0, 500.0, 550.0, 600.0, 700.0, 750.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1500.0, 1700.0, 1900.0, 2000.0, 2499.0, 2500.0, 2700.0, 3000.0, 3300.0, 3500.0, 4000.0, 4200.0, 4990.0, 5000.0, 5490.0, 6000.0, 6950.0, 7500.0, 8000.0, 9850.0, 10000.0, 12000.0, 13500.0, 15000.0, 18000.0, 23000.0, 30000.0, 45000.0, 75000.0, 130000.0, 200000.0, 300000.0, 430000.0, 600000.0, 895000.0, 1260000.0, 1650000.0, 2100000.0, 2720000.0, 3990000.0, 380000000.0]
+    }
+  },
+  "categorical_column_with_hash_bucket": {
+  },
+  "indicator_column": {
+  },
+  "embedding_column": {
+    "avg_days_up_user": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "avg_days_up_user"
+      },
+      "dimension": 5
+    },
+    "avg_times_up_user": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "avg_times_up_user"
+      },
+      "dimension": 5
+    },
+    "n_user_items": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "n_user_items"
+      },
+      "dimension": 5
+    },
+    "price": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "price"
+      },
+      "dimension": 5
+    },
+    "item_seq_number": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "item_seq_number"
+      },
+      "dimension": 5
+    },
+    "title_word_count": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "title_word_count"
+      },
+      "dimension": 5
+    },
+    "description_word_count": {
+      "come_from": {
+        "column": "bucketized_column",
+        "name": "description_word_count"
+      },
+      "dimension": 5
+    },
+    "activation_date_dow": {
+      "come_from": {
+        "column": "categorical_column_with_identity",
+        "name": "activation_date_dow"
+      },
+      "dimension": 3
+    },
+    "title_tfidf_floats": {
+      "come_from": {
+        "column": "weighted_categorical_column",
+        "name": "title_tfidf_floats"
+      },
+      "combiner": "sqrtn",
+      "dimension": 10
+    },
+    "description_tfidf_floats": {
+      "come_from": {
+        "column": "weighted_categorical_column",
+        "name": "description_tfidf_floats"
+      },
+      "combiner": "sqrtn",
+      "dimension": 15
+    },
+    "region": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "region"
+      },
+      "dimension": 3
+    },
+    "city": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "city"
+      },
+      "dimension": 7
+    },
+    "parent_category_name": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "parent_category_name"
+      },
+      "dimension": 3
+    },
+    "category_name": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "category_name"
+      },
+      "dimension": 3
+    },
+    "activation_date": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_list",
+        "name": "activation_date"
+      },
+      "dimension": 3
+    },
+    "param_1": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "param_1"
+      },
+      "dimension": 5
+    },
+    "param_2": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "param_2"
+      },
+      "dimension": 5
+    },
+    "param_3": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_file",
+        "name": "param_3"
+      },
+      "dimension": 7
+    },
+    "user_type": {
+      "come_from": {
+        "column": "categorical_column_with_vocabulary_list",
+        "name": "user_type"
+      },
+      "dimension": 2
+    },
+    "image_top_1": {
+      "come_from": {
+        "column": "categorical_column_with_identity",
+        "name": "image_top_1"
+      },
+      "dimension": 10
+    }
+  },
+  "crossed_column": {
+
+  },
+  "model_input": {
+    "wide_column": {
+      "categorical_column_with_vocabulary_file": [
+        "user_id"
+      ],
+      "crossed_column": [
+
+      ],
+      "bucketized_column": [
+      ],
+      "categorical_column_with_vocabulary_list": [
+      ]
+    },
+    "unknown_column": {
+      "embedding_column": [
+      ]
+    },
+    "deep_column": {
+      "embedding_column": [
+        "region",
+        "city",
+        "parent_category_name",
+        "category_name",
+        "user_type",
+        "param_1",
+        "param_2",
+        "param_3",
+
+        "image_top_1",
+
+        "title_word_count",
+        "description_word_count",
+        "item_seq_number",
+        "price",
+
+        "activation_date_dow",
+        "title_tfidf_floats",
+        "description_tfidf_floats",
+        "avg_days_up_user",
+        "avg_times_up_user",
+        "n_user_items"
+      ],
+      "numeric_column": [
+      ],
+      "indicator_column": [
+      ]
+    }
+  }
+}
+
+

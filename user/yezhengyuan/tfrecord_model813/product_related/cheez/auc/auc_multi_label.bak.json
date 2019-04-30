@@ -1,0 +1,64 @@
+{
+  "csv_column_idx_needs": [2, 11],
+
+  "user_id": {
+    "idx_in_sample_info": 0
+  },
+  "user_groups":[
+    {
+      "name": "COUNTRY",
+      "idx_in_sample_info": 1,
+      "in": [
+        "US",
+        "IN",
+        "OTHER",
+        "ALL"
+      ]
+    }
+  ],
+  "score_weight": {
+    "_conf1": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "_conf2": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "_conf3": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "_conf4": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "label_info": {
+    "SVDWELL": {
+      "idx_in_csv": 4,
+      "thresh": 10
+    },
+    "SVSHARE": {
+      "idx_in_csv": 5,
+      "thresh": 1
+    },
+    "SVFOLLOW": {
+      "idx_in_csv": 9,
+      "thresh": 1
+    },
+    "SVLIKE": {
+      "idx_in_csv": 10,
+      "thresh": 1
+    }
+  }
+
+}

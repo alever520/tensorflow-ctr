@@ -1,0 +1,30 @@
+{
+  "tfrecord_bytes_key_needs": ["user_id", "region"],
+  "tfrecord_float_key_needs": ["deal_probability"],
+  "csv_column_idx_needs": [1, 2],
+
+  "user_id": {
+    "idx_in_sample_info": 0
+  },
+  "user_groups":[
+    {
+      "name": "COUNTRY",
+      "idx_in_sample_info": 1,
+      "in": [
+        "ALL"
+      ]
+    }
+  ],
+  "score_weight": {
+    "_conf1": [
+      1.0
+    ]
+  },
+  "label_info": {
+    "deal_probability": {
+      "idx_in_csv": 17,
+      "thresh": 0.5
+    }
+  }
+
+}

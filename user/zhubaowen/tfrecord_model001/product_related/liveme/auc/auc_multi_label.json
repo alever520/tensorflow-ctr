@@ -1,0 +1,41 @@
+{
+  "tfrecord_bytes_key_needs": ["U_UID", "COUNTRY"],
+  "csv_column_idx_needs": [7, 6],
+
+  "user_id": {
+    "idx_in_sample_info": 0
+  },
+  "user_groups":[
+    {
+      "name": "COUNTRY",
+      "idx_in_sample_info": 1,
+      "in": [
+        "ALL",
+        "US"
+      ]
+    }
+  ],
+  "score_weight": {
+    "_conf1": [
+      1.0
+    ]
+  },
+  "label_info": {
+    "JOIN": {
+      "idx_in_csv": 0,
+      "thresh": 10
+    },
+    "FOLLOW": {
+      "idx_in_csv": 1,
+      "thresh": 1
+    },
+    "GIFT": {
+      "idx_in_csv": 2,
+      "thresh": 1
+    },
+    "SHARE": {
+      "idx_in_csv": 4,
+      "thresh": 1
+    }
+  }
+}

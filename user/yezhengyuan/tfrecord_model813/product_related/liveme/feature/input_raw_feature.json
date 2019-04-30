@@ -1,0 +1,532 @@
+[
+  {
+    "name": "JOIN",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 1.0
+      },
+      "min": 0.0,
+      "max": 1000.0,
+      "denominator": 10.0
+    }
+  },
+  {
+    "name": "FOLLOW",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 20.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "GIFT",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 1.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "TALK",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false"
+  },
+  {
+    "name": "SHARE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": null,
+      "weight": {
+        "": 1.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0
+    }
+  },
+  {
+    "name": "PRAISE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false"
+  },
+  {
+    "name": "COUNTRY",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "false"
+  },
+  {
+    "name": "U_UID",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "U_SEX",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "U_CITY",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "false"
+  },
+  {
+    "name": "U_LAN",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "A_UID",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "A_SEX",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_SHARER",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_CLICKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LIKER",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_TALKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_GIFTR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_FOLLOWR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_RENTENTIONR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_DWE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LSHARER",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LCLICKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LLIKER",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LTALKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LGIFTR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LFOLLOWR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LRENTENTIONR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_LDWE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_MLCLICKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_FLCLICKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_MCLICKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_FCLICKR",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "U_PREFV2",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "V_AUDIENCE_NUM",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "A_LEVEL",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "U_BIRTHDAY",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "A_RACE_MODEL",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  }
+]

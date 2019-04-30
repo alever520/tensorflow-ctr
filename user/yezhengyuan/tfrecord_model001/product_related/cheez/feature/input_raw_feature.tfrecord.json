@@ -1,0 +1,266 @@
+[
+  {
+    "name": "SVV_VID",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVU_UID",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVA_UID",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVU_COUNTRY",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVU_OS",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_COUNTRY",
+    "format": {
+      "csv": {
+        "type": "string"
+      },
+      "tfrecord": {
+        "type": "fixed_len_bytes",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_CLICKRATE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_LIKERATE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_COMMENTRATE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_SHARERATE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_FOLLOWRATE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVV_WATCHALLRATE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "true"
+  },
+  {
+    "name": "SVDWELL",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 1.0,
+        "US\tvis": 1.0,
+        "IN\treg": 1.0,
+        "IN\tvis": 1.0,
+        "": 1.0
+      },
+      "min": 0.0,
+      "max": 100.0,
+      "denominator": 10.0,
+      "as_probability": false
+    }
+  },
+  {
+    "name": "SVSHARE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 130.0,
+        "US\tvis": 130.0,
+        "IN\treg": 130.0,
+        "IN\tvis": 130.0,
+        "": 130.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0,
+      "as_probability": false
+    }
+  },
+  {
+    "name": "SVFOLLOW",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 130.0,
+        "US\tvis": 130.0,
+        "IN\treg": 130.0,
+        "IN\tvis": 130.0,
+        "": 130.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0,
+      "as_probability": false
+    }
+  },
+  {
+    "name": "SVLIKE",
+    "format": {
+      "csv": {
+        "type": "float"
+      },
+      "tfrecord": {
+        "type": "fixed_len_float",
+        "shape": []
+      }
+    },
+    "used": "false",
+    "label": {
+      "weight_cond_features": "SVU_COUNTRY,SVU_TYPE",
+      "weight": {
+        "US\treg": 130.0,
+        "US\tvis": 130.0,
+        "IN\treg": 130.0,
+        "IN\tvis": 130.0,
+        "": 130.0
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "denominator": 1.0,
+      "as_probability": false
+    }
+  }
+]
